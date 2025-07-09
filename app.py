@@ -1,4 +1,3 @@
-pip install streamlit transformers wikipediaapi torch
 
 import streamlit as st
 from transformers import pipeline
