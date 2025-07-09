@@ -9,7 +9,7 @@ st.title("🌐 WikiSageQA: Multilingual Wikipedia Question Answering")
 # --- LOAD MODELS ---
 @st.cache_resource
 def load_models():
-    extractive = pipeline("question-answering", model="deepset/xlm-roberta-large-squad2")
+    pipeline("question-answering", model="distilbert-base-cased-distilled-squad")
     generative = pipeline("text-generation", model="gpt2")
     return extractive, generative
 
